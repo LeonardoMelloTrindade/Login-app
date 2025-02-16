@@ -1,10 +1,10 @@
 <template>
   <AuthWrapper>
     <template #container-login>
-      Componente Login
+      {{ srcImg }}
     </template>
     <template #container-img>
-      <AuthImage />
+      <AuthImage :srcImg="srcImg"/>
     </template>
   </AuthWrapper>
 </template>
@@ -12,13 +12,23 @@
 <script lang="ts">
 import AuthWrapper from '@/components/container/AuthWrapper.vue';
 import AuthImage from '@/components/AuthImage.vue';
+import Vue from 'vue';
 
+interface IData {
+  srcImg: string;
+}
 
-export default {
+export default Vue.extend({
   name: 'LoginView',
   components: {
     AuthWrapper,
     AuthImage
+  },
+  data(): IData {
+    return {
+      srcImg: require('../assets/interview.svg')
+    };
   }
-};
+
+});
 </script>

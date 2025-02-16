@@ -1,11 +1,19 @@
 <template>
-  <img src="../assets/undraw_interview_rmcf.svg" alt="Imagem de pequenas empresas e meu grande negócio">
+  <img :src="$props.srcImg" alt="Imagem de pequenas empresas e meu grande negócio">
 </template>
 
 <script lang="ts">
+import Vue, { PropOptions } from 'vue';
 
 
-export default {
+interface IProps {
+  srcImg: PropOptions<string>;
+}
+
+export default Vue.extend({
   name: 'AuthImage',
-};
+  props: {
+    srcImg: String,
+  } as IProps,
+});
 </script>
