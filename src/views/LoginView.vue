@@ -1,21 +1,24 @@
 <template>
-  <LoginContainer>
+  <AuthWrapper>
     <template #container-login>
       Componente Login
     </template>
     <template #container-img>
-      Componente img
+      <AuthImage />
     </template>
-  </LoginContainer>
+  </AuthWrapper>
 </template>
 
 <script lang="ts">
-import LoginContainer from '@/components/container/LoginContainer.vue';
+import AuthWrapper from '@/components/container/AuthWrapper.vue';
+import AuthImage from '@/components/AuthImage.vue';
+
 
 export default {
   name: 'LoginView',
   components: {
-    LoginContainer
+    AuthWrapper,
+    AuthImage
   }
 };
 </script>

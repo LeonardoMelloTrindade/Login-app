@@ -12,15 +12,22 @@
 <script lang="ts">
 
 export default {
-  name: 'LoginContainer',
+  name: 'AuthWrapper',
 };
 </script>
 
 <style scoped>
   .container {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 55%;
     height: 99.8vh;
   }
+
+  .container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
 </style>
