@@ -1,5 +1,15 @@
 # login-app
 
+## 0.3.0
+
+### Minor Changes
+
+- 56339f7: feat: adiciona layout em AuthImage.vue
+
+### Patch Changes
+
+- fc945c3: feat: deixa o link da rota da imagem dinamica
+
 ## 0.2.0
 
 ### Minor Changes

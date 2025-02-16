@@ -1,21 +1,34 @@
 <template>
-  <LoginContainer>
+  <AuthWrapper>
     <template #container-login>
-      Componente Login
+      {{ srcImg }}
     </template>
     <template #container-img>
-      Componente img
+      <AuthImage :srcImg="srcImg"/>
     </template>
-  </LoginContainer>
+  </AuthWrapper>
 </template>
 
 <script lang="ts">
-import LoginContainer from '@/components/container/LoginContainer.vue';
+import AuthWrapper from '@/components/container/AuthWrapper.vue';
+import AuthImage from '@/components/AuthImage.vue';
+import Vue from 'vue';
 
-export default {
+interface IData {
+  srcImg: string;
+}
+
+export default Vue.extend({
   name: 'LoginView',
   components: {
-    LoginContainer
+    AuthWrapper,
+    AuthImage
+  },
+  data(): IData {
+    return {
+      srcImg: require('../assets/interview.svg')
+    };
   }
-};
+
+});
 </script>
