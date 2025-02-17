@@ -19,6 +19,8 @@ export default {
 
 <style scoped>
   .form-container {
+    height: 99.8vh;
+    background-color: #4E5BEE;
     display: flex;
     justify-content: center;
     align-items: center;
