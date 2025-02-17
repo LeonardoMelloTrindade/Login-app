@@ -4,7 +4,7 @@
       <slot name="header"></slot>
     </header>
     <section>
-      <slot name="form"></slot>
+      <slot></slot>
     </section>
   </main>
 </template>
@@ -24,7 +24,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 144px 0;
   }
 
 </style>
