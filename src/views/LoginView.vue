@@ -10,9 +10,9 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue';
 import AuthWrapper from '@/components/container/AuthWrapper.vue';
 import AuthImage from '@/components/AuthImage.vue';
-import Vue from 'vue';
 
 interface IData {
   srcImg: string;
