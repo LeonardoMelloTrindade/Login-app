@@ -27,5 +27,4 @@ export default {
     flex-direction: column;
     gap: 144px 0;
   }
-
 </style>

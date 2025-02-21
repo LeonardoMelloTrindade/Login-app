@@ -5,8 +5,11 @@
     </template>
     <template>
       <div class="form">
-        <InputForm type="text" />
-        <InputForm type="password" />
+        <InputForm type="text" :icon="iconEmail"/>
+        <InputForm type="password" :icon="iconPassword"/>
+        <button>
+          Entrar
+        </button>
       </div>
     </template>
   </AuthFormWrapper>
@@ -21,6 +24,12 @@ export default {
   components: {
     AuthFormWrapper,
     InputForm,
+  },
+  data() {
+    return {
+      iconEmail: 'fa-solid fa-at',
+      iconPassword: 'fa-solid fa-lock'
+    };
   }
 };
 
@@ -30,7 +39,8 @@ export default {
   .img-logo {
     width: 32vh;
   }
-  div {
+
+  .form {
     display: flex;
     flex-direction: column;
   }
